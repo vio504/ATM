@@ -4,27 +4,27 @@
 #ifndef WITHDRAWAL_H
 #define WITHDRAWAL_H
 
+#include "Transaction.h" // Transaction class definition
+
 // forward declaration 
-class Screen;
+
 class keypad;
 class CashDispenser;
-class BankDatabase;
 
-class Withdrawal
+// class Withdrawal derives from base class Transaction
+class Withdrawal : public Transaction
 {
 public:
     // operations
-    void execute(); // perform the transaction
+    // member function overriding 'execute' in base class Transaction
+    virtual void execute(); // perform the transaction
 private:
     // attributes
-    int accountNumber; // account to withdraw funds from
     double amount; // amount to withdraw
 
     // references to associated objects
-    Screen &screen;
     keypad &keypad;
     CashDispenser &cashdispenser;
-    BankDatabase &bankdatabase;
 };
 
 #endif // WITHDRAWAL_H
