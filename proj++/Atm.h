@@ -22,7 +22,7 @@ private:
     Keypad keypad;
     CashDispenser cashDispenser;
     DepositSlot depositSlot;
-    BankDatabase bandDatabase;
+    BankDatabase bankDatabase;
 
     // private utility functions
     void authenticateUser();
