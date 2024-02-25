@@ -1,4 +1,4 @@
-// Atm.h
+// ATM.h
 // ATM class definition. Represents an automated teller machine.
 #ifndef ATM_H
 #define ATM_H
