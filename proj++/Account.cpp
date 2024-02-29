@@ -3,10 +3,10 @@
 #include "Account.h"
 
 // Account constructor initializes attributes
-Account::Account(int theAccountNumber, int ThePIN,
+Account::Account(int theAccountNumber, int thePIN,
    double theAvailableBalance, double theTotalBalance) 
    : accountNumber(theAccountNumber), 
-     pin(ThePIN), 
+     pin(thePIN), 
      availableBalance(theAvailableBalance), 
      totalBalance(theTotalBalance)
 {
