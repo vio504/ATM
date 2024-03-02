@@ -4,7 +4,7 @@
 #define ATM_H
 
 #include "Screen.h"
-#include "Keybad.h"
+#include "Keypad.h"
 #include "CashDispenser.h" // class definition
 #include "DepositSlot.h"
 #include "BankDatabase.h"
