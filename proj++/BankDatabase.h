@@ -25,6 +25,6 @@ private:
 
     // private utility function
     Account * getAccount(int); // get pointer to Account object
-}
+};
 
 #endif
