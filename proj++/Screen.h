@@ -9,8 +9,8 @@ using namespace std;
 class Screen
 {
 public:
-    void displayMesseage(string) const; 
-    void displayMesseageLine(string) const;
+    void displayMessage(string) const; 
+    void displayMessageLine(string) const;
     void displayDollarAmount(double) const;
 };
 
