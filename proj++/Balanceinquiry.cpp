@@ -28,9 +28,9 @@ void BalanceInquiry::execute()
        bankDatabase.getTotalBalance(getAccountNumber());
 
     // display the balance information on the screen
-    screen.displayMesseageLine("\nBalance Information:");
-    screen.displayMesseage(" - Available balance: ");
+    screen.displayMessageLine("\nBalance Information:");
+    screen.displayMessage(" - Available balance: ");
     screen.displayDollarAmount(availableBalance);
-    screen.displayMesseage("\n - Total balance:    ");
-    screen.displayMesseageLine("");
+    screen.displayMessage("\n - Total balance:    ");
+    screen.displayMessageLine("");
 }
