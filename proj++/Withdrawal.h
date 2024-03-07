@@ -1,30 +1,28 @@
 // Withdrawal.h
-// Definition of class Withdrawal that represents a withdrawal transaction
-
+// Definition of class Withdrawal that represents a withdrawal transaction.
 #ifndef WITHDRAWAL_H
 #define WITHDRAWAL_H
 
 #include "Transaction.h" // Transaction class definition
-
-// forward declaration 
-
-class keypad;
+class keypad;// forward declaration
 class CashDispenser;
 
 // class Withdrawal derives from base class Transaction
 class Withdrawal : public Transaction
 {
 public:
+    Withdrawal(int , Screen &, BankDatabase &, keypad &, CashDispenser &);
     // operations
     // member function overriding 'execute' in base class Transaction
     virtual void execute(); // perform the transaction
 private:
     // attributes
-    double amount; // amount to withdraw
-
+    int amount; // amount to withdraw
     // references to associated objects
     keypad &keypad;
-    CashDispenser &cashdispenser;
+    CashDispenser &cashDispenser;
+    // display the withdrawal menu
+    int displayMenuOfAmounts() const;
 };
 
 #endif // WITHDRAWAL_H
