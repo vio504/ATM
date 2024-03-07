@@ -7,12 +7,12 @@
 using namespace std;
 
 
-void Screen::displayMesseage(string message) const
+void Screen::displayMessage(string message) const
 {
     cout << message;
 }
 
-void Screen::displayMesseageLine(string message) const
+void Screen::displayMessageLine(string message) const
 {
     cout << message << endl;
 }
