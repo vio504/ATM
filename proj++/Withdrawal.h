@@ -4,14 +4,14 @@
 #define WITHDRAWAL_H
 
 #include "Transaction.h" // Transaction class definition
-class keypad;// forward declaration
+class Keypad;// forward declaration
 class CashDispenser;
 
 // class Withdrawal derives from base class Transaction
 class Withdrawal : public Transaction
 {
 public:
-    Withdrawal(int , Screen &, BankDatabase &, keypad &, CashDispenser &);
+    Withdrawal(int , Screen &, BankDatabase &, Keypad &, CashDispenser &);
     // operations
     // member function overriding 'execute' in base class Transaction
     virtual void execute(); // perform the transaction
@@ -19,7 +19,7 @@ private:
     // attributes
     int amount; // amount to withdraw
     // references to associated objects
-    keypad &keypad;
+    Keypad &keypad;
     CashDispenser &cashDispenser;
     // display the withdrawal menu
     int displayMenuOfAmounts() const;
