@@ -75,7 +75,7 @@ void Withdrawal::execute()
         }
         else
         {
-            screen.displayMesseageLine("\nCanceling transaction...");
+            screen.displayMessageLine("\nCanceling transaction...");
             transactionCanceled = true;
         }
     } while (!cashDispensed && !transactionCanceled);
@@ -83,7 +83,7 @@ void Withdrawal::execute()
 
 // display a menu of withdrawal amounts and the option to cancel;
 // return the chosen amount or 0 if the user chooses to cancel
-int withdrawal::dispalyMenuOfAmounts() const
+int Withdrawal::displayMenuOfAmounts() const
 {
     int userChoice = 0;
 
