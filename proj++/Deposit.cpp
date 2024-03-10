@@ -75,6 +75,7 @@ double Deposit::promptForDepositAmount() const
    else
    {
        // return dollar amount
+       return static_cast< double >(input) / 100;
    }
 }
 
