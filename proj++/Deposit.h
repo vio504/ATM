@@ -17,6 +17,6 @@ private:
     Keypad &keypad;
     DepositSlot &depositSlot;
     double promptForDepositAmount() const; // private utility function
-}
+};
 
 #endif
