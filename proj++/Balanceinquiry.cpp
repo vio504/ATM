@@ -32,5 +32,6 @@ void BalanceInquiry::execute()
     screen.displayMessage(" - Available balance: ");
     screen.displayDollarAmount(availableBalance);
     screen.displayMessage("\n - Total balance:    ");
+    screen.displayDollarAmount(totalBalance);
     screen.displayMessageLine("");
 }
